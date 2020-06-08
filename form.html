@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Zaidi's fitness Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- java script code for bootstrap strat here -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-	#000000">
+        <a class="navbar-brand" href="#">Zaidi's Fitness Gym</a>
+        <img src="https://previews.123rf.com/images/yupiramos/yupiramos1412/yupiramos141200714/34252363-fitness-gym-design-over-black-background.jpg"
+        height="200px" width="100px" />
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Addmition
+              </a>
+              <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <a href="form.html" class="dropdown-item" href="form.html">Form</a>
+                <a class="dropdown-item" href="feedback.html">Feedback</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"></a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" >About Us</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search here" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+<!-- form start here -->
+<form>
+  <h1  class="head">Form For Addmition </h1>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationDefault01">First name</label>
+        <input type="text" class="form-control" id="validationDefault01" placeholder="Entre Your First Name" required>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="validationDefault01">Last name</label>
+        <input type="text" class="form-control" id="validationDefault01" placeholder="Entre Your Last Name" required>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="validationDefault01">Email Addres</label>
+        <input type="email" class="form-control" id="validationDefault01" placeholder="abc51214@gmail.com" required>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="validationDefault02">Password</label>
+        <input type="password" class="form-control" id="validationDefault02" placeholder="12345" required>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationDefault03">City</label>
+        <input type="text" class="form-control" id="validationDefault03" placeholder="Karachi" required>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationDefault04">State</label>
+        <select class="custom-select" id="validationDefault04" > 
+           <option selected disabled value="">Pakistan</option> 
+           <option>Iran</option>
+        </select>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationDefault05">Address</label>
+        <input type="text" class="form-control" id="validationDefault05" placeholder="2/123 SFC B#8" required>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationDefault05">Age</label>
+        <input type="number" class="form-control" id="validationDefault05" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+        <label class="form-check-label" for="invalidCheck2">
+          Agree to terms and conditions please read again carefully press button for submit form
+        </label>
+      </div>
+    </div>
+  
+     <button   class="btn btn-outline-success" type="submit"> <a href="thanks.html">   
+       Submit Form  </button>
+      </a>
+  </form>
+
+  <footer class="container mt-5">
+    <hr color="white">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>© 2017-2020 Zaidi's fitness gym, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    <hr color="white">
+</footer>
+    </body>
+    </html>
